@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌌 Galaxy Portfolio
+# 🌌 My Portfolio
 
 ### ✨ *Christine Mae C. Banculo*
 
@@ -23,7 +23,7 @@
 
 🔗 **Try the Portfolio Here**
 
-[![Open Portfolio](https://img.shields.io/badge/OPEN_PORTFOLIO-CLICK_HERE-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://your-app-url.streamlit.app)
+[![Open Portfolio](https://img.shields.io/badge/OPEN_PORTFOLIO-CLICK_HERE-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://christine-multipage-portfolio.streamlit.app/)
 
 </div>
 
@@ -49,7 +49,7 @@
 
 # 🌌 About the Project
 
-**Galaxy Portfolio** is a multi-page interactive portfolio built using **Python** and **Streamlit**.
+**My Portfolio** is a multi-page interactive portfolio built using **Python** and **Streamlit**.
 It highlights academic achievements, technical skills, completed projects, and creative works such as calligraphy and crochet.
 
 This portfolio demonstrates:
