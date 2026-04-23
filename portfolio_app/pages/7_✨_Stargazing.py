@@ -87,7 +87,6 @@ st.markdown("""
         box-shadow: 0 0 25px rgba(100, 150, 255, 0.5);
     }
     
-    /* ALL TEXT PURE WHITE */
     .info-card p, .info-card li, .info-card span, .info-card h1, .info-card h2, .info-card h3, .info-card h4 {
         color: #ffffff !important;
     }
@@ -108,7 +107,6 @@ st.markdown("""
         box-shadow: 0 0 25px rgba(100, 150, 255, 0.5);
     }
     
-    /* Music card ALL TEXT PURE WHITE */
     .music-card h4, .music-card p {
         color: #ffffff !important;
     }
@@ -126,6 +124,69 @@ st.markdown("""
         padding: 30px;
         margin: 20px 0;
         min-height: 450px;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @media (max-width: 768px) {
+        .display-container {
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+        .animation-side {
+            width: 100%;
+            order: 1;
+        }
+        .info-side {
+            width: 100%;
+            order: 2;
+            padding: 10px;
+        }
+        .animation-img {
+            width: 200px !important;
+            height: 200px !important;
+        }
+        .info-title {
+            font-size: 1.3rem !important;
+            text-align: center;
+        }
+        .info-side p {
+            font-size: 0.85rem !important;
+        }
+        .info-fact {
+            font-size: 0.85rem;
+        }
+        h1 {
+            font-size: 1.8rem !important;
+        }
+        .stSubheader {
+            font-size: 1.3rem !important;
+        }
+        .music-card {
+            padding: 12px;
+        }
+        .music-card h4 {
+            font-size: 0.9rem;
+        }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .display-container {
+            gap: 20px;
+            padding: 25px;
+        }
+        .animation-img {
+            width: 220px !important;
+            height: 220px !important;
+        }
+        .info-title {
+            font-size: 1.5rem;
+        }
     }
     
     .animation-side {
@@ -137,7 +198,6 @@ st.markdown("""
         text-align: center;
     }
     
-    /* Animation side text PURE WHITE */
     .animation-side p {
         color: #ffffff !important;
     }
@@ -148,12 +208,10 @@ st.markdown("""
         text-align: left;
     }
     
-    /* Info side ALL TEXT PURE WHITE */
     .info-side p, .info-side strong, .info-side span, .info-side h2 {
         color: #ffffff !important;
     }
     
-    /* Fascinating fact box - ALL TEXT PURE WHITE */
     .info-fact {
         background: rgba(100,150,255,0.2);
         padding: 15px;
@@ -166,7 +224,6 @@ st.markdown("""
         color: #ffffff !important;
     }
     
-    /* Title PURE WHITE */
     .info-title {
         color: #ffffff !important;
         font-size: 1.8rem;
@@ -185,7 +242,6 @@ st.markdown("""
     .code-string { color: #f1fa8c; }
     .code-parenthesis { color: #ffb86c; }
     
-    /* ALL HEADERS PURE WHITE */
     h1, h2, h3, h4, h5, h6, .stHeader, .stSubheader {
         color: #ffffff !important;
         font-family: 'Courier New', monospace;
@@ -194,43 +250,35 @@ st.markdown("""
         z-index: 10;
     }
     
-    /* ALL TEXT ELEMENTS PURE WHITE */
     p, li, span, div, label, .stMarkdown, .stText, .stCaption {
         color: #ffffff !important;
     }
     
-    /* Expander header PURE WHITE */
     .streamlit-expanderHeader {
         color: #ffffff !important;
         background: rgba(15, 25, 45, 0.7);
     }
     
-    /* Expander content PURE WHITE */
     .streamlit-expanderContent p, .streamlit-expanderContent li {
         color: #ffffff !important;
     }
     
-    /* Alert messages PURE WHITE */
     .stAlert, .stAlert p, .stInfo, .stInfo p, .stSuccess, .stSuccess p, .stWarning, .stWarning p, .stError, .stError p {
         color: #ffffff !important;
     }
     
-    /* Button text PURE WHITE */
     .stButton > button, .stButton > button p {
         color: #ffffff !important;
     }
     
-    /* Slider text PURE WHITE */
     .stSlider label, .stSlider p {
         color: #ffffff !important;
     }
     
-    /* Selectbox label PURE WHITE */
     .stSelectbox label {
         color: #ffffff !important;
     }
     
-    /* Text input labels PURE WHITE */
     .stTextInput label, .stTextArea label {
         color: #ffffff !important;
     }
@@ -267,20 +315,37 @@ st.markdown("""
         box-shadow: 0 0 30px rgba(100,150,255,0.4);
     }
     
-    /* Dropdown text (options) - keep black for readability */
     .stSelectbox div[data-baseweb="select"] div {
         color: #000000 !important;
         background-color: #ffffff !important;
     }
     
-    /* Caption PURE WHITE */
     .stCaption, caption {
         color: #ffffff !important;
     }
     
-    /* hr line */
     hr {
         border-color: rgba(100, 150, 255, 0.3);
+    }
+    
+    .stButton button {
+        white-space: normal;
+        word-wrap: break-word;
+        font-size: 0.9rem;
+        padding: 10px 12px;
+        transition: all 0.3s ease;
+    }
+    
+    .stButton button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 15px rgba(100, 150, 255, 0.4);
+    }
+    
+    @media (max-width: 768px) {
+        .stButton button {
+            font-size: 0.75rem;
+            padding: 8px 10px;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -371,7 +436,6 @@ def get_animation_svg(object_key):
     else:
         svg = """<svg width="200" height="200" viewBox="0 0 200 200"><circle cx="100" cy="100" r="40" fill="#88aaff"><animate attributeName="r" values="35;45;35" dur="2s" repeatCount="indefinite"/></circle></svg>"""
     
-    # Encode SVG to base64 data URL
     svg_base64 = base64.b64encode(svg.encode()).decode()
     return f"data:image/svg+xml;base64,{svg_base64}"
 
@@ -415,10 +479,7 @@ st.markdown('<h1 style="text-align:center; font-size:3rem; color:#ffffff;">✨ W
 st.markdown('<p style="text-align:center; font-size:1.2rem; color:#ffffff;">Take a deep breath... Look up at the stars... Let the universe embrace you.</p>', unsafe_allow_html=True)
 st.markdown("---")
 
-
-st.markdown("---")
-
-# Celestial Objects
+# Celestial Objects Data
 celestial_objects = {
     "☀️ Sun": {"key": "Sun", "type": "Yellow Dwarf Star", "age": "~4.6 billion years", "distance": "149.6 million km", "temperature": "~5,500°C", "size": "1,392,700 km diameter", "fact": "The Sun contains 99.86% of all mass in our solar system! It takes about 8 minutes for light to travel from the Sun to Earth."},
     "⭐ Sirius": {"key": "Sirius", "type": "Binary Star System", "age": "~242 million years", "distance": "8.6 light-years", "temperature": "~9,940°C", "size": "~1.7 times larger than Sun", "fact": "Sirius is the brightest star in Earth's night sky and has a white dwarf companion called Sirius B, about the size of Earth but as massive as our Sun!"},
@@ -433,6 +494,7 @@ celestial_objects = {
     "🌠 Pleiades": {"key": "Pleiades", "type": "Open Star Cluster", "age": "~100 million years", "distance": "444 light-years", "stars": "~1,000 stars", "size": "~12 light-years across", "fact": "Only 7 stars are visible to the naked eye - hence 'Seven Sisters'! In Japanese, it's called Subaru, which is why the car logo has six stars."}
 }
 
+# Get selected object from query params or session state
 if 'selected_object' not in st.session_state:
     st.session_state.selected_object = None
 
@@ -458,23 +520,23 @@ if st.session_state.selected_object:
     
     info_html = f"""
     <div class="info-side">
-        <h2 style="color:#ffffff;">{st.session_state.selected_object}</h2>
-        <p style="color:#ffffff;"><strong>🌟 Type:</strong> {obj['type']}</p>
-        <p style="color:#ffffff;"><strong>📅 Age:</strong> {obj['age']}</p>
-        <p style="color:#ffffff;"><strong>📏 Distance:</strong> {obj['distance']}</p>
+        <h2 class="info-title">{st.session_state.selected_object}</h2>
+        <p><strong>🌟 Type:</strong> {obj['type']}</p>
+        <p><strong>📅 Age:</strong> {obj['age']}</p>
+        <p><strong>📏 Distance:</strong> {obj['distance']}</p>
     """
     
     if 'temperature' in obj:
-        info_html += f'<p style="color:#ffffff;"><strong>🌡️ Temperature:</strong> {obj["temperature"]}</p>'
+        info_html += f'<p><strong>🌡️ Temperature:</strong> {obj["temperature"]}</p>'
     if 'size' in obj:
-        info_html += f'<p style="color:#ffffff;"><strong>📐 Size:</strong> {obj["size"]}</p>'
+        info_html += f'<p><strong>📐 Size:</strong> {obj["size"]}</p>'
     if 'stars' in obj:
-        info_html += f'<p style="color:#ffffff;"><strong>⭐ Stars:</strong> {obj["stars"]}</p>'
+        info_html += f'<p><strong>⭐ Stars:</strong> {obj["stars"]}</p>'
     
     info_html += f"""
         <div class="info-fact">
-            <strong style="color:#ffffff;">✨ Fascinating Fact:</strong><br>
-            <span style="color:#ffffff;">{obj['fact']}</span>
+            <strong>✨ Fascinating Fact:</strong><br>
+            {obj['fact']}
         </div>
     </div>
     """
@@ -483,18 +545,24 @@ if st.session_state.selected_object:
     <div class="display-container">
         <div class="animation-side">
             <img src="{svg_data_url}" width="250" height="250" class="animation-img">
+            <p style="margin-top:10px;">✨ Animated SVG ✨</p>
         </div>
         {info_html}
     </div>
     """, unsafe_allow_html=True)
     
+    # Add a clear button to reset selection
+    if st.button("🗑️ Clear Selection"):
+        st.session_state.selected_object = None
+        st.rerun()
+    
 else:
     st.markdown("""
     <div class="info-card" style="text-align:center;">
         <span style="font-size:3rem;">🔭</span>
-        <h3 style="color:#ffffff;">Choose a celestial object above</h3>
-        <p style="color:#ffffff;">Click on any star, planet, or galaxy to see its realistic animated representation and detailed information!</p>
-        <p style="color:#ffffff; font-size:0.9rem;">✨ Each object has a unique, scientifically-inspired animation ✨</p>
+        <h3>Choose a celestial object above</h3>
+        <p>Click on any star, planet, or galaxy to see its realistic animated representation and detailed information!</p>
+        <p style="font-size:0.9rem;">✨ Each object has a unique, scientifically-inspired animation ✨</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -541,7 +609,6 @@ with st.expander("🪐 Planets & Space"):
 
 st.markdown("---")
 
-
 # Real-time Music Player Section
 st.subheader("🎵 Relaxing Space Music")
 st.markdown("""
@@ -564,14 +631,13 @@ for idx, track in enumerate(music_tracks):
     with cols[idx % 3]:
         st.markdown(f"""
         <div class="music-card">
-            <h4 style="color:#ffffff;">{track['name']}</h4>
-            <p style="color:#ffffff; font-size:0.8rem;">Click play to listen</p>
+            <h4>{track['name']}</h4>
+            <p style="font-size:0.8rem;">Click play to listen</p>
             <audio controls style="width:100%; margin-top:10px;">
                 <source src="{track['url']}" type="audio/mpeg">
             </audio>
         </div>
         """, unsafe_allow_html=True)
-
 
 cosmic_quotes = [
     "We are made of star-stuff. — Carl Sagan",
