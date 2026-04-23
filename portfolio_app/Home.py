@@ -208,7 +208,7 @@ st.sidebar.markdown("[📘 Facebook](https://www.facebook.com/share/1DWzombwNQ/)
 
 # Load image and convert to base64
 try:
-    image = Image.open("images/ID.png")
+    image = Image.open("portfolio_app/images/ID.png")
     buffered = BytesIO()
     image.save(buffered, format="PNG")
     img_base64 = base64.b64encode(buffered.getvalue()).decode()
