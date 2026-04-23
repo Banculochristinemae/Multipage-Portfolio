@@ -307,7 +307,7 @@ with st.container():
         if st.button("🏨 Click to View Details", key="btn_hotel", use_container_width=True):
             st.session_state.show_hotel = not st.session_state.show_hotel
         
-        img_src = load_image("images/HMS.jpg")
+        img_src = load_image("portfolio_app/images/HMS.jpg")
         if img_src:
             st.markdown(f'<div class="project-img-container"><img src="{img_src}" class="project-img" onclick="openModal(\'{img_src}\')"></div>', unsafe_allow_html=True)
         else:
@@ -330,7 +330,7 @@ with st.container():
         if st.button("🎮 Click to View Details", key="btn_math", use_container_width=True):
             st.session_state.show_math = not st.session_state.show_math
         
-        img_src = load_image("images/math_game.jpg")
+        img_src = load_image("portfolio_app/images/math_game.jpg")
         if img_src:
             st.markdown(f'<div class="project-img-container"><img src="{img_src}" class="project-img" onclick="openModal(\'{img_src}\')"></div>', unsafe_allow_html=True)
         else:
@@ -353,7 +353,7 @@ with st.container():
         if st.button("🏪 Click to View Details", key="btn_store", use_container_width=True):
             st.session_state.show_store = not st.session_state.show_store
         
-        img_src = load_image("images/SMS.jpg")
+        img_src = load_image("portfolio_app/images/SMS.jpg")
         if img_src:
             st.markdown(f'<div class="project-img-container"><img src="{img_src}" class="project-img" onclick="openModal(\'{img_src}\')"></div>', unsafe_allow_html=True)
         else:
@@ -376,7 +376,7 @@ with st.container():
         if st.button("📸 Click to View Details", key="btn_photo", use_container_width=True):
             st.session_state.show_photo = not st.session_state.show_photo
         
-        img_src = load_image("images/photobooth.jpg")
+        img_src = load_image("portfolio_app/images/photobooth.jpg")
         if img_src:
             st.markdown(f'<div class="project-img-container"><img src="{img_src}" class="project-img" onclick="openModal(\'{img_src}\')"></div>', unsafe_allow_html=True)
         else:
