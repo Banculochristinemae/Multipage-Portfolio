@@ -231,12 +231,12 @@ def get_image_base64(img_path):
 
 # Certificate data
 certificates_data = [
-    {"img": "images/Cisco_CSS.png", "icon": "🎨", "title": "CSS Essentials", "type": "Web Dev", "desc": "CSS styling, responsive design"},
-    {"img": "images/Cisco_py.png", "icon": "🐍", "title": "Python Essential 1", "type": "Python", "desc": "Python fundamentals"},
-    {"img": "images/intro_to_AI.png", "icon": "🤖", "title": "Introduction to AI", "type": "AI", "desc": "AI/ML concepts"},
-    {"img": "images/Cyber_sec.png", "icon": "🔒", "title": "Intro to Cyber Security", "type": "Security", "desc": "Security fundamentals"},
-    {"img": "images/python.png", "icon": "🐍", "title": "Python for Beginners", "type": "Python", "desc": "Python basics"},
-    {"img": "images/django.png", "icon": "🌐", "title": "Python Django 101", "type": "Python", "desc": "Django framework"}
+    {"img": "portfolio_app/images/Cisco_CSS.png", "icon": "🎨", "title": "CSS Essentials", "type": "Web Dev", "desc": "CSS styling, responsive design"},
+    {"img": "portfolio_app/images/Cisco_py.png", "icon": "🐍", "title": "Python Essential 1", "type": "Python", "desc": "Python fundamentals"},
+    {"img": "portfolio_app/images/intro_to_AI.png", "icon": "🤖", "title": "Introduction to AI", "type": "AI", "desc": "AI/ML concepts"},
+    {"img": "portfolio_app/images/Cyber_sec.png", "icon": "🔒", "title": "Intro to Cyber Security", "type": "Security", "desc": "Security fundamentals"},
+    {"img": "portfolio_app/images/python.png", "icon": "🐍", "title": "Python for Beginners", "type": "Python", "desc": "Python basics"},
+    {"img": "portfolio_app/images/django.png", "icon": "🌐", "title": "Python Django 101", "type": "Python", "desc": "Django framework"}
 ]
 
 # Session state to track which certificate is being viewed
