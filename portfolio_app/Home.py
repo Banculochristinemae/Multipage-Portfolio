@@ -244,7 +244,7 @@ else:
         </div>
     </div>
     """, unsafe_allow_html=True)
-    st.info("📸 **Tip:** Make sure 'images/ID.png' exists in the images folder to display your photo!")
+    
 
 st.markdown('<p style="font-size:2.5rem; color:#e0e8ff; text-align:center; font-family: monospace; text-shadow: 0 0 10px rgba(100,150,255,0.4);">🌌 Christine Mae C. Banculo</p>', unsafe_allow_html=True)
 st.markdown('<p style="font-size:1.2rem; color:#a8b8e0; text-align:center; margin-bottom: 30px;">Third Year Computer Science Student | Aspiring Full Stack Developer</p>', unsafe_allow_html=True)
