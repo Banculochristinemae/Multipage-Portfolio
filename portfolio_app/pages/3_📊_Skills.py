@@ -310,10 +310,10 @@ col1, col2, col3, col4 = st.columns(4)
 
 # Calligraphy items with images - ORIGINAL CONTAINER DESIGN
 calligraphy_items = [
-    {"icon": "🏷️", "title": "Name Tags", "desc": "Custom name tags", "img": "images/name_tag.png"},
-    {"icon": "📖", "title": "Bookmarkers", "desc": "Hand-lettered bookmarks", "img": "images/bookmark.jpg"},
-    {"icon": "💬", "title": "Quote Art", "desc": "Inspirational wall art", "img": "images/quote.jpg"},
-    {"icon": "💌", "title": "Greeting Cards", "desc": "Custom greetings", "img": "images/greeting.jpg"}
+    {"icon": "🏷️", "title": "Name Tags", "desc": "Custom name tags", "img": "portfolio_app/images/name_tag.png"},
+    {"icon": "📖", "title": "Bookmarkers", "desc": "Hand-lettered bookmarks", "img": "portfolio_app/images/bookmark.jpg"},
+    {"icon": "💬", "title": "Quote Art", "desc": "Inspirational wall art", "img": "portfolio_app/images/quote.jpg"},
+    {"icon": "💌", "title": "Greeting Cards", "desc": "Custom greetings", "img": "portfolio_app/images/greeting.jpg"}
 ]
 
 for idx, item in enumerate(calligraphy_items):
@@ -351,10 +351,10 @@ col1, col2, col3, col4 = st.columns(4)
 
 # Crochet items with images - ORIGINAL CONTAINER DESIGN
 crochet_items = [
-    {"icon": "🔑", "title": "Keychains", "desc": "Mini keychains", "img": "images/keychain.jpg"},
-    {"icon": "🎀", "title": "Hair Accessories", "desc": "Headbands", "img": "images/hair_acc.jpg"},
-    {"icon": "👜", "title": "Bags", "desc": "Tote and market bags", "img": "images/bag.jpg"},
-    {"icon": "🎁", "title": "Custom Gifts", "desc": "Personalized crochet", "img": "images/custom_gift.jpg"}
+    {"icon": "🔑", "title": "Keychains", "desc": "Mini keychains", "img": "portfolio_app/images/keychain.jpg"},
+    {"icon": "🎀", "title": "Hair Accessories", "desc": "Headbands", "img": "portfolio_app/images/hair_acc.jpg"},
+    {"icon": "👜", "title": "Bags", "desc": "Tote and market bags", "img": "portfolio_app/images/bag.jpg"},
+    {"icon": "🎁", "title": "Custom Gifts", "desc": "Personalized crochet", "portfolio_app/img": "images/custom_gift.jpg"}
 ]
 
 for idx, item in enumerate(crochet_items):
