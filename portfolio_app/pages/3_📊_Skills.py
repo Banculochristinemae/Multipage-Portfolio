@@ -354,7 +354,7 @@ crochet_items = [
     {"icon": "🔑", "title": "Keychains", "desc": "Mini keychains", "img": "portfolio_app/images/keychain.jpg"},
     {"icon": "🎀", "title": "Hair Accessories", "desc": "Headbands", "img": "portfolio_app/images/hair_acc.jpg"},
     {"icon": "👜", "title": "Bags", "desc": "Tote and market bags", "img": "portfolio_app/images/bag.jpg"},
-    {"icon": "🎁", "title": "Custom Gifts", "desc": "Personalized crochet", "portfolio_app/img": "images/custom_gift.jpg"}
+    {"icon": "🎁", "title": "Custom Gifts", "desc": "Personalized crochet", "img": "portfolio_app/images/custom_gift.jpg"}
 ]
 
 for idx, item in enumerate(crochet_items):
